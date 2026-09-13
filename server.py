@@ -123,7 +123,7 @@ while (True):
         if in_active_users_ip(client_address[0]):
             try:
                 print(c_data)
-                massege = re.findall(r"POST (\S+)\r\n\r\n", c_data)[0]
+                massege = re.findall(r"POST (.*?)\r\n\r\n", c_data)[0]
                 masseges.append(f"{return_name(client_address[0])}: {massege}")
             except Exception as e:
                 print(e)
