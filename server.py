@@ -58,6 +58,7 @@ def delate_user(ip):
             print(f"Delating user {u.name}")
             active_users.pop(i)
             return 0
+        i = i+1
     return 1
 
 #update time by user
